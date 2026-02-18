@@ -1,9 +1,5 @@
 
 
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-
 9.999999046325684px	2	Select
 10px	11 Select
 12px	15 Select
@@ -22,32 +18,3 @@
 50px	1 Select
 60px	1 Select
 70px	1
-
-
-#ffffff
-RGB: 255, 255, 255
-360
-
-#000000
-RGB: 0, 0, 0
-105
-
-#f2f2f2
-RGB: 242, 242, 242
-30
-
-#a3a3a3
-RGB: 163, 163, 163
-24
-
-#171717
-RGB: 23, 23, 23
-18
-
-#a1a382
-RGB: 161, 163, 130
-6
-
-#2e3345
-RGB: 46, 51, 69
-6
