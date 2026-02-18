@@ -1,19 +1,19 @@
 @use "../utils/_index.scss" as *;
 
-.title {
+.section-title {
   font-family: $font-family;
   font-weight: 600;
-  line-height: 100%;
+  line-height: 120%;
   color: $text-color-main;
-  @include adaptive-property(font-size, 4.25, 3, 3, rem);
-  @include adaptive-property(margin-bottom, 24, 8, 4);
+  @include adaptive-property(font-size, 1.5, 2.1875, 2.5, rem);
 }
 
-.subtitle {
+.section-subtitle {
   font-family: $font-family;
-  line-height: 150%;
+  font-weight: 500;
+  line-height: 120%;
   color: $text-color-main;
-  @include adaptive-property(font-size, 1.5, 2.5, 2.5, rem);
+  @include adaptive-property(font-size, 0.625, 0.875, 0.875 rem);
 }
 
 //=================================BUTTON=============================
@@ -39,17 +39,4 @@
   cursor: pointer;
   z-index: 1;
   overflow: hidden;
-}
-
-// ==============================LOGO
-.logo {
-  display: flex;
-  align-items: center;
-
-  &__img {
-    display: block;
-    aspect-ratio: 1 / 1;
-    @include adaptive-property(width, 42, 0, 60);
-    @include ibg;
-  }
 }
