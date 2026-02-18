@@ -89,7 +89,7 @@ h6 {
 .page {
   min-width: 320px;
   color: #000;
-  font-family: "";
+  font-family: "Inter";
   font-size: 1rem;
   background-color: #fff;
   overflow-x: clip;
@@ -124,53 +124,55 @@ h6 {
 }
 
 [class*=__container] {
-  max-width: 1200px;
-  padding-inline: 15px;
+  max-width: 1310px;
+  padding-inline: 23px;
   margin-inline: auto;
   overflow-x: clip;
 }
 
 .title {
-  font-family: "";
+  font-family: "Inter";
   font-weight: 600;
   line-height: 100%;
   color: #000;
-  font-size: calc(4.25rem + (-1.25) * (100vw - 20rem) / (27.99875));
-  margin-bottom: calc(24px + (-16) * (100vw - 320px) / (447.98));
+  font-size: calc(4.25rem + (-1.25) * (100vw - 20rem) / (17.5));
 }
-@media (min-width: 767.98px) {
+@media (min-width: 599.98px) {
   .title {
-    font-size: calc(3rem + (0) * (100vw - 47.99875rem) / (42.00125));
+    font-size: calc(3rem + (0) * (100vw - 37.5rem) / (47.875));
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .title {
     font-size: 3rem;
   }
 }
-@media (min-width: 767.98px) {
+.title {
+  margin-bottom: calc(24px + (-16) * (100vw - 320px) / (280));
+}
+@media (min-width: 599.98px) {
   .title {
-    margin-bottom: calc(8px + (-4) * (100vw - 767.98px) / (672.02));
+    margin-bottom: calc(8px + (-4) * (100vw - 600px) / (766));
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .title {
     margin-bottom: 4px;
   }
 }
 
 .subtitle {
-  font-family: "";
+  font-family: "Inter";
   line-height: 150%;
   color: #000;
-  font-size: calc(1.5rem + (1) * (100vw - 20rem) / (27.99875));
+  font-size: calc(1.5rem + (1) * (100vw - 20rem) / (17.5));
 }
-@media (min-width: 767.98px) {
+@media (min-width: 599.98px) {
   .subtitle {
-    font-size: calc(2.5rem + (0) * (100vw - 47.99875rem) / (42.00125));
+    font-size: calc(2.5rem + (0) * (100vw - 37.5rem) / (47.875));
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .subtitle {
     font-size: 2.5rem;
   }
@@ -217,12 +219,14 @@ h6 {
   display: block;
   aspect-ratio: 1/1;
   width: 60px;
-  overflow: hidden;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
   .logo__img {
-    width: calc(42px + (18) * (100vw - 320px) / (1120));
+    width: calc(42px + (18) * (100vw - 320px) / (1046));
   }
+}
+.logo__img {
+  overflow: hidden;
 }
 .logo__img img {
   width: 100%;
