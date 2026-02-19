@@ -20,7 +20,6 @@
 .button {
   width: fit-content;
   display: flex;
-  padding-inline: 0.5rem;
   justify-content: center;
   align-items: center;
   color: $bg-color-main;
@@ -36,5 +35,13 @@
   transition: $transition-duraction;
   cursor: pointer;
   @include adaptive-property(font-size, 0.75, 1, 1.125, rem);
-  @include adaptive-property(padding-block, 0.5, 0.875, 1, rem);
+  @include adaptive-property(padding-inline, 1.25, 1.5625, 1.375, rem);
+  @include adaptive-property(padding-block, 0.625, 0.875, 0.875, rem);
+}
+
+.cross {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $bg-color-main;
 }

@@ -1,12 +1,13 @@
 @use "../utils/_index" as *;
 
 .header {
-  position: fixed; //sticky
+  position: sticky;
   top: 0;
   right: 0;
   left: 0;
   z-index: 50;
   transition: $transition-duraction;
+  background: #a1a483;
 
   &__content {
     width: 100%;
