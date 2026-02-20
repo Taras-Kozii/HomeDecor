@@ -45,3 +45,32 @@
   border-radius: 50%;
   background-color: $bg-color-main;
 }
+
+.logo {
+  overflow: hidden;
+  transition: $transition-duraction ease-in-out;
+  img {
+    @include adaptive-property(width, 104, 156, 192);
+    @include adaptive-property(height, 12, 18, 23);
+    object-position: center;
+  }
+  @include hover {
+    scale: 1.05;
+  }
+}
+
+.shopping-cart {
+  border-radius: 50%;
+  border: 1.5px solid $bg-color-main;
+  transition: $transition-duraction ease-in-out;
+  span {
+    @include adaptive-property(width, 12, 17, 17);
+    @include adaptive-property(height, 10, 15, 15);
+    @include ibg;
+  }
+  @include adaptive-property(width, 26, 36, 36);
+  @include adaptive-property(height, 26, 36, 36);
+  @include hover {
+    scale: 1.05;
+  }
+}

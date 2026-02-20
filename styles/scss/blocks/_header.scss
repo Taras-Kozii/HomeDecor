@@ -13,16 +13,78 @@
     width: 100%;
     padding: 10px 0;
     @include flex(space-between, center);
-  }
-
-  &__menu {
-    column-gap: 10px;
-    @include flex(space-between, center);
+    @include adaptive-property(min-height, 52, 80, 80);
   }
 
   &__logo {
     z-index: 5;
     @include position-r;
+  }
+}
+.burger {
+  @media (max-width: 1023.98px) {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 25px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 5;
+
+    &::before,
+    &::after,
+    span {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 10px;
+      background-color: $bg-color-main;
+      transition: $transition-duraction;
+      cursor: pointer;
+
+      @include on-tablet {
+        height: 3px;
+      }
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.burger.active {
+  &::before {
+    //top: calc(50% - 1px);
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+  }
+
+  &::after {
+    //top: calc(50% - 1px);
+    top: 50%;
+    transform: rotate(45deg) translateY(-50%);
+  }
+
+  span {
+    opacity: 0;
+    transform: scaleX(0);
   }
 }
 
