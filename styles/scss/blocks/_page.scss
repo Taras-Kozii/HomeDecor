@@ -17,7 +17,7 @@
   background-color: $bg-color-main;
   overflow-x: clip;
   &__header {
-    @include adaptive-property(margin-bottom, 30, 30, 46);
+    @include adaptive-property(margin-bottom, 0, 30, 46);
   }
 }
 

@@ -11,9 +11,11 @@
 .section-subtitle {
   font-family: $font-family;
   font-weight: 500;
-  line-height: 120%;
+  line-height: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1.35px;
   color: $text-color-main;
-  @include adaptive-property(font-size, 0.625, 0.875, 0.875 rem);
+  @include adaptive-property(font-size, 0.625, 0.875, 0.875, rem);
 }
 
 //=================================BUTTON=============================

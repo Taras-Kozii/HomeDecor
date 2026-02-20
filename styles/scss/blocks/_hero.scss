@@ -1,0 +1,69 @@
+@use "../utils/_index" as *;
+@use "sass:math";
+
+.hero {
+  &__subtitle {
+    @include adaptive-property(margin-bottom, 0.625, 1.0625, 0.9375, rem);
+  }
+  &__content {
+    max-width: #{$container-width}px;
+    margin-inline: auto;
+    overflow-x: clip;
+    @include on-tablet {
+      padding-inline: #{math.div($container-padding, 2)}px;
+    }
+    @media (min-width: 720px) {
+      display: flex;
+    }
+    @include adaptive-property(margin-bottom, 20, 30, 46);
+  }
+  &__content-text {
+    background-color: #f6f6f6;
+    padding-inline: #{math.div($container-padding, 2)}px;
+    padding-block: 35px;
+    @include adaptive-property(padding-inline, 23, 33, 79);
+    @media (min-width: 720px) {
+      width: 50%;
+    }
+  }
+  &__title {
+    line-height: 110%;
+    font-weight: 700;
+    @include adaptive-property(font-size, 2.5, 3.75, 4.375, rem);
+    @include adaptive-property(margin-bottom, 0.75, 1.125, 1.375, rem);
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+    p {
+      @include adaptive-property(font-size, 0.75, 1, 1.125, rem);
+      line-height: 150%;
+    }
+    @include adaptive-property(margin-bottom, 16, 16, 33);
+  }
+  &__button {
+    @include adaptive-property(margin-bottom, 45, 38, 38);
+  }
+  &__slogan {
+    font-weight: 500;
+    line-height: 1.625rem;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 2px solid #f3f3f3;
+    @include adaptive-property(font-size, 0.75, 1, 1.25, rem);
+  }
+  &__img {
+    width: 100%;
+    aspect-ratio: 320 / 256;
+    @include ibg;
+    @include on-tablet {
+      aspect-ratio: 550 / 499;
+    }
+    @media (min-width: 720px) {
+      width: 50%;
+      aspect-ratio: 628 / 589;
+    }
+  }
+}
