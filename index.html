@@ -116,17 +116,107 @@
             </div>
             <div class="hero__img">
               <img
-                src="./images/img/hero.webp"
-                alt="sofa"
+                src="./images/img/hero-mobile.webp"
+                srcset="
+                  ./images/img/hero-tablet.webp   600w,
+                  ./images/img/hero-desktop.webp 1024w
+                "
+                sizes="(max-width: 600px) 600px, 1024px"
+                alt="chair"
                 decoding="async"
                 width="320"
                 height="256"
+                loading="lazy"
               />
             </div>
           </div>
           <div class="hero__container">
             <div class="hero__slogan">
               Place seasonal & targeted discount benefits here
+            </div>
+          </div>
+        </section>
+        <section class="arrivals">
+          <div class="arrivals__container">
+            <div class="arrivals__img">
+              <img
+                src="./images/img/arrivals/arrivals-mobile.webp"
+                srcset="
+                  ./images/img/arrivals/arrivals-tablet.webp   600w,
+                  ./images/img/arrivals/arrivals-desktop.webp 1024w
+                "
+                sizes="(max-width: 600px) 600px, 1024px"
+                alt="chair"
+                decoding="async"
+                width="320"
+                height="256"
+                loading="lazy"
+              />
+            </div>
+            <div class="arrivals__content">
+              <h3 class="section-subtitle arrivals__subtitle">NEW arrivals</h3>
+              <h2 class="arrivals__title">
+                Everything you <br />
+                need for your <br />
+                living room <br />
+              </h2>
+              <a href="#" class="button fill-down-effect arrivals__button">
+                <span>PURCHASE</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="benefits">
+          <div class="benefits__container">
+            <div class="benefits__content">
+              <article class="benefits__item benefit">
+                <div class="benefit__img">
+                  <img
+                    src="./images/icons/clock.svg"
+                    alt="clock"
+                    loading="lazy"
+                  />
+                </div>
+                <h4 class="benefit__title">Long-life objects</h4>
+                <div class="benefit__text">
+                  <p>
+                    Short text describing one of your product or service
+                    advantages. Try being creative.
+                  </p>
+                </div>
+              </article>
+              <article class="benefits__item benefit">
+                <div class="benefit__img">
+                  <img
+                    src="./images/icons/shipping.svg"
+                    alt="car-icon"
+                    loading="lazy"
+                  />
+                </div>
+                <h4 class="benefit__title">Fast Shipping</h4>
+                <div class="benefit__text">
+                  <p>
+                    Short text describing one of your product or service
+                    advantages. Try being creative.
+                  </p>
+                </div>
+              </article>
+              <article class="benefits__item benefit">
+                <div class="benefit__img">
+                  <img
+                    src="./images/icons/wallet.svg"
+                    alt="wallet-icon"
+                    loading="lazy"
+                  />
+                </div>
+                <h4 class="benefit__title">10% cashback</h4>
+                <div class="benefit__text">
+                  <p>
+                    Short text describing one of your product or service
+                    advantages. Try being creative.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </section>

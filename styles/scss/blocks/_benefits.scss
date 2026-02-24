@@ -1,0 +1,40 @@
+@use "../utils/_index" as *;
+
+.benefits {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+.benefit {
+  flex: 0 1 310px;
+  display: flex;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    aspect-ratio: 1 / 1;
+    @include adaptive-property(width, 60, 90, 90);
+
+    img {
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.12px;
+    text-align: center;
+
+    @include adaptive-property(font-size, 1, 0, 1.375, rem);
+    @include on-desktop {
+      margin-bottom: 13px;
+    }
+  }
+}
