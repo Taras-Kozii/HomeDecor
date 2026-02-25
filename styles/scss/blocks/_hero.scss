@@ -53,6 +53,7 @@
     background-color: #fff;
     border-bottom: 2px solid #f3f3f3;
     @include adaptive-property(font-size, 0.75, 1, 1.25, rem);
+    @include adaptive-property(margin-bottom, 30, 46, 60);
   }
   &__img {
     width: 100%;

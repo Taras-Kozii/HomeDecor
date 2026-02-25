@@ -5,7 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 1.875rem;
+    column-gap: 7.727%;
+    @include adaptive-property(row-gap, 2.0625, 2.75, 2.75, rem);
+    @include adaptive-property(padding-top, 40, 60, 80);
+    @include adaptive-property(padding-bottom, 30, 50, 74);
   }
 }
 
@@ -13,7 +16,7 @@
   flex: 0 1 310px;
   display: flex;
   padding-inline: 1rem;
-  padding-block: 1rem;
+  padding-block: 0.625rem;
   flex-direction: column;
   align-items: center;
   &__img {
@@ -36,5 +39,11 @@
     @include on-desktop {
       margin-bottom: 13px;
     }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+    text-align: center;
   }
 }
