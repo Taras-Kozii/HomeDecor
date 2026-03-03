@@ -1,0 +1,18 @@
+@use "../utils/_index" as *;
+@use "sass:math";
+
+.products {
+  &__content {
+    max-width: #{$container-width}px;
+    margin-inline: auto;
+    overflow-x: clip;
+    @include on-tablet {
+      padding-inline: #{math.div($container-padding, 2)}px;
+    }
+  }
+}
+
+.product {
+  @include adaptive-property(padding-inline, 22, 40, 40);
+  @include adaptive-property(padding-block, 24, 44, 44);
+}
