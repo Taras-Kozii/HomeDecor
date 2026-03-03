@@ -1,0 +1,57 @@
+@use "../utils/_index" as *;
+@use "sass:math";
+
+.service {
+  &__content {
+    max-width: #{$container-width}px;
+    margin-inline: auto;
+    overflow-x: clip;
+    @include on-tablet {
+      padding-inline: #{math.div($container-padding, 2)}px;
+    }
+  }
+  &__title {
+    text-align: center;
+    padding-inline: #{math.div($container-padding, 2)}px;
+    @include adaptive-property(margin-bottom, 1.5, 1.8125, 3.4375, rem);
+  }
+  &__content-text {
+    padding-inline: #{math.div($container-padding, 2)}px;
+  }
+  &__subtitle {
+    max-width: 484px;
+    font-weight: 600;
+    line-height: 1.75rem;
+    @include adaptive-property(margin-bottom, 0.4375, 0.5625, 1.125, rem);
+    @include adaptive-property(font-size, 1, 1.375, 1.375, rem);
+  }
+  &__img {
+    width: 100%;
+    aspect-ratio: 320 / 211;
+    @include ibg;
+    @include adaptive-property(margin-bottom, 12, 26, 46);
+    @include on-tablet {
+      aspect-ratio: 550 / 299;
+    }
+    @media (min-width: 720px) {
+      aspect-ratio: 1256 / 601;
+    }
+  }
+  &__text {
+    margin-bottom: 1.4375rem;
+    max-width: 484px;
+    p {
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  &__bottom {
+   @media (min-width: 900px) {
+      display: flex;
+      justify-content: space-between;
+   }
+  }
+  &__button {
+    align-self:flex-start;
+  }
+}
