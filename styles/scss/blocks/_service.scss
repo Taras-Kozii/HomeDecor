@@ -17,6 +17,9 @@
   }
   &__content-text {
     padding-inline: #{math.div($container-padding, 2)}px;
+    @include on-tablet {
+      padding-inline: 0;
+    }
   }
   &__subtitle {
     max-width: 484px;
