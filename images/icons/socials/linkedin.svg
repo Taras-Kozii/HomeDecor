@@ -1,0 +1,31 @@
+<svg viewBox="0 0 18.5352 19.1062" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.535156" height="19.106201" fill="none" customFrame="#000000">
+	<defs>
+		<g id="pixso_custom_effect_0">
+			<effect x="0.000000" y="4.000000" visibility="visible" fill="rgb(0,0,0)" fill-opacity="0.25" effectType="dropShadow" stdDeviation="4" radius="0" />
+			<effect x="0.000000" y="4.000000" visibility="visible" fill="rgb(0,0,0)" fill-opacity="0.25" effectType="dropShadow" stdDeviation="4" radius="0" />
+		</g>
+		<filter id="filter_0" width="18.535156" height="19.106201" x="0.000000" y="0.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_0)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="4.000000" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="1.33333337" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0 " />
+			<feBlend result="effect_dropShadow_1" in2="BackgroundImageFix" mode="normal" />
+			<feColorMatrix result="hardAlpha" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0 " />
+			<feOffset dx="0.000000" dy="4.000000" in="hardAlpha" />
+			<feGaussianBlur stdDeviation="1.33333337" />
+			<feComposite k2="-1" k3="1" in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0 " />
+			<feBlend result="effect_dropShadow_2" in2="effect_dropShadow_1" mode="normal" />
+			<feBlend result="shape" in="SourceGraphic" in2="effect_dropShadow_2" mode="normal" />
+		</filter>
+	</defs>
+	<g id="Linkedin icon" filter="url(#filter_0)">
+		<g id="linkedin">
+			<path id="Oval" d="M5.31691 2.7765C6.04422 2.7765 6.63382 2.15496 6.63382 1.38825C6.63382 0.621542 6.04422 0 5.31691 0C4.5896 0 4 0.621542 4 1.38825C4 2.15496 4.5896 2.7765 5.31691 2.7765Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+			<path id="Shape" d="M6.41409 3.70215L4.21924 3.70215C4.09809 3.70215 3.99976 3.8058 3.99976 3.93352L3.99976 10.8748C3.99976 11.0025 4.09809 11.1062 4.21924 11.1062L6.41409 11.1062C6.53525 11.1062 6.63358 11.0025 6.63358 10.8748L6.63358 3.93352C6.63358 3.8058 6.53525 3.70215 6.41409 3.70215Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+			<path id="Shape" d="M12.9536 3.3832C12.0156 3.04447 10.8422 3.34202 10.1385 3.87557C10.1144 3.77608 10.0283 3.70204 9.92606 3.70204L7.7312 3.70204C7.61005 3.70204 7.51172 3.80569 7.51172 3.93341L7.51172 10.8747C7.51172 11.0024 7.61005 11.106 7.7312 11.106L9.92606 11.106C10.0472 11.106 10.1455 11.0024 10.1455 10.8747L10.1455 5.88622C10.5002 5.56415 10.9572 5.46141 11.3312 5.62893C11.6938 5.79043 11.9014 6.18469 11.9014 6.70992L11.9014 10.8747C11.9014 11.0024 11.9998 11.106 12.1209 11.106L14.3158 11.106C14.4369 11.106 14.5352 11.0024 14.5352 10.8747L14.5352 6.24393C14.5102 4.34248 13.6617 3.63864 12.9536 3.3832Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>

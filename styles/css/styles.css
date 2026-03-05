@@ -1272,10 +1272,14 @@ h6 {
 }
 .shop__cards {
   display: grid;
+  grid-column: 2;
   grid-template-columns: repeat(auto-fill, minmax(138px, 266px));
   -webkit-column-gap: 1rem;
      -moz-column-gap: 1rem;
           column-gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   row-gap: calc(0.5px + (25.5) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
@@ -1290,9 +1294,21 @@ h6 {
 }
 @media (min-width: 599.98px) {
   .shop__cards {
+    grid-column: 2;
     -webkit-column-gap: 1.1875rem;
        -moz-column-gap: 1.1875rem;
             column-gap: 1.1875rem;
+    grid-template-columns: repeat(auto-fill, minmax(266px, 300px));
+  }
+}
+@media (min-width: 1024px) {
+  .shop__cards {
+    grid-column: 3;
+  }
+}
+@media (min-width: 1310px) {
+  .shop__cards {
+    grid-column: 4;
   }
 }
 
