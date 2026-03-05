@@ -1,0 +1,7 @@
+@use "../utils/_index" as *;
+
+.brands {
+  &__content {
+    @include adaptive-property(padding-block, 40, 60, 80);
+  }
+}

@@ -9,6 +9,7 @@
     @include on-tablet {
       padding-inline: #{math.div($container-padding, 2)}px;
     }
+    @include adaptive-property(margin-bottom, 48, 75, 95);
   }
   &__title {
     text-align: center;
@@ -46,6 +47,9 @@
     p {
       font-weight: 400;
       line-height: 150%;
+    }
+    @media (min-width: 900px) {
+      margin-bottom: 0;
     }
   }
   &__bottom {
