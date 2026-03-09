@@ -420,6 +420,12 @@ h6 {
   }
 }
 
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #F3F3F3;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -787,7 +793,7 @@ h6 {
   padding-bottom: 12px;
   text-align: center;
   background-color: #fff;
-  border-bottom: 2px solid #f3f3f3;
+  margin-bottom: 15px;
   font-size: calc(0.75rem + (0.25) * (100vw - 20rem) / (17.5));
 }
 @media (min-width: 599.98px) {
@@ -800,17 +806,17 @@ h6 {
     font-size: 1.25rem;
   }
 }
-.hero__slogan {
-  margin-bottom: calc(30px + (16) * (100vw - 320px) / (280));
+.hero__line {
+  margin-bottom: calc(40px + (20) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
-  .hero__slogan {
-    margin-bottom: calc(46px + (14) * (100vw - 600px) / (766));
+  .hero__line {
+    margin-bottom: calc(60px + (-14) * (100vw - 600px) / (766));
   }
 }
 @media (min-width: 1366px) {
-  .hero__slogan {
-    margin-bottom: 60px;
+  .hero__line {
+    margin-bottom: 46px;
   }
 }
 .hero__img {
@@ -1334,8 +1340,6 @@ h6 {
   }
 }
 .shop__line {
-  height: 2px;
-  background-color: #f3f3f3;
   margin-top: calc(26px + (29) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
@@ -1520,6 +1524,18 @@ h6 {
   background-color: #A1A483;
 }
 .contacts__content {
+  margin-inline: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 675px;
   padding-top: calc(39px + (22) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
@@ -1544,4 +1560,107 @@ h6 {
   .contacts__content {
     padding-bottom: 112px;
   }
+}
+.contacts__title {
+  line-height: 122%; /* 61/50 */
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-size: calc(1.5rem + (0.6875) * (100vw - 20rem) / (17.5));
+}
+@media (min-width: 599.98px) {
+  .contacts__title {
+    font-size: calc(2.1875rem + (0.9375) * (100vw - 37.5rem) / (47.875));
+  }
+}
+@media (min-width: 1366px) {
+  .contacts__title {
+    font-size: 3.125rem;
+  }
+}
+.contacts__title {
+  margin-bottom: calc(0.875rem + (0.3125) * (100vw - 20rem) / (17.5));
+}
+@media (min-width: 599.98px) {
+  .contacts__title {
+    margin-bottom: calc(1.1875rem + (-0.125) * (100vw - 37.5rem) / (47.875));
+  }
+}
+@media (min-width: 1366px) {
+  .contacts__title {
+    margin-bottom: 1.0625rem;
+  }
+}
+.contacts__text {
+  color: #fff;
+  line-height: 150%;
+  font-size: calc(0.75rem + (0.25) * (100vw - 20rem) / (17.5));
+}
+@media (min-width: 599.98px) {
+  .contacts__text {
+    font-size: calc(1rem + (0.125) * (100vw - 37.5rem) / (47.875));
+  }
+}
+@media (min-width: 1366px) {
+  .contacts__text {
+    font-size: 1.125rem;
+  }
+}
+.contacts__text {
+  margin-bottom: calc(1.0625rem + (1.125) * (100vw - 20rem) / (17.5));
+}
+@media (min-width: 599.98px) {
+  .contacts__text {
+    margin-bottom: calc(2.1875rem + (-0.125) * (100vw - 37.5rem) / (47.875));
+  }
+}
+@media (min-width: 1366px) {
+  .contacts__text {
+    margin-bottom: 2.0625rem;
+  }
+}
+.contacts__button {
+  margin-bottom: calc(1.25rem + (0.3125) * (100vw - 20rem) / (17.5));
+}
+@media (min-width: 599.98px) {
+  .contacts__button {
+    margin-bottom: calc(1.5625rem + (2.25) * (100vw - 37.5rem) / (47.875));
+  }
+}
+@media (min-width: 1366px) {
+  .contacts__button {
+    margin-bottom: 3.8125rem;
+  }
+}
+.contacts__copyright {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: calc(1.3125rem + (2.125) * (100vw - 20rem) / (17.5));
+}
+@media (min-width: 599.98px) {
+  .contacts__copyright {
+    margin-bottom: calc(3.4375rem + (-1.3125) * (100vw - 37.5rem) / (47.875));
+  }
+}
+@media (min-width: 1366px) {
+  .contacts__copyright {
+    margin-bottom: 2.125rem;
+  }
+}
+.contacts__copyright {
+  font-size: calc(0.625rem + (0.125) * (100vw - 20rem) / (17.5));
+}
+@media (min-width: 599.98px) {
+  .contacts__copyright {
+    font-size: calc(0.75rem + (0.125) * (100vw - 37.5rem) / (47.875));
+  }
+}
+@media (min-width: 1366px) {
+  .contacts__copyright {
+    font-size: 0.875rem;
+  }
+}
+
+.footer {
+  background-color: #A1A483;
 }
