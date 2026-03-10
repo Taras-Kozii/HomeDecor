@@ -9,7 +9,7 @@
     align-items: center;
     max-width: 675px;
     @include adaptive-property(padding-top, 39, 61, 112);
-    @include adaptive-property(padding-bottom, 53, 74, 112);
+    @include adaptive-property(padding-bottom, 25, 55, 34);
   }
   &__title {
     line-height: 122%; /* 61/50 */
@@ -21,6 +21,7 @@
   }
   &__text {
     color: $bg-color-main;
+    text-align: center;
     line-height: 150%;
     @include adaptive-property(font-size, 0.75, 1, 1.125, rem);
     @include adaptive-property(margin-bottom, 1.0625, 2.1875, 2.0625, rem);

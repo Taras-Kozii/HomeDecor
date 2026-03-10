@@ -2,5 +2,30 @@
 
 .footer {
   background-color: #A1A483;
+  &__content {
+    margin-inline: auto;
+    max-width: 1016px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 15px;
+    @include adaptive-property(margin-bottom, 53, 74, 112);
+    @include on-tablet {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+   
+  }
+  &__line {
+    max-width: 1016px;
+    margin-inline: auto;
+    @include adaptive-property(margin-bottom, 22, 22, 34);
+  }
+  &__logo {
+    @include adaptive-property(width, 93, 142, 217);
+    @include adaptive-property(height, 11, 16, 25);
+  }
 }
 
