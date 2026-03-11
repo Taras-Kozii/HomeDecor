@@ -25,23 +25,19 @@
 }
 
 .product {
-  flex-basis: 100%;
-  @media (min-width: 768px) {
-    flex-basis: calc((100% - 1rem) / 2);
-  }
-  @media (min-width: 1024px) {
-    flex-basis: calc((100% - 2rem) / 3);
-  }
   display: flex;
+  flex-basis: 100%;
   &__body-text {
     position: relative;
     z-index: 2;
     max-width: 222px;
     min-width: 40%;
-    // @include adaptive-property(width, 158, 222, 222);
   }
   &__title {
     @include adaptive-property(margin-bottom, 0.875, 1.875, 1, rem);
+    @media (min-width: 768px) {
+      text-align: center;
+    }
   }
   &__img {
     width: 59%;
@@ -49,9 +45,25 @@
     z-index: 1;
     margin-top: auto;
     @include adaptive-property(margin-right, -24, -40, 0);
-    @include adaptive-property(margin-bottom, -24, -44, 0);
+    @include adaptive-property(margin-bottom, -24, -44, -44);
     @include ibg(cover);
+    @media (min-width: 768px) {
+      width: auto;
+    }
   }
+  &__button {
+    margin-inline: auto;
+    white-space: nowrap;
+  }
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 1rem) / 2);
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 1024px) {
+    flex-basis: calc((100% - 2rem) / 3);
+  }
+  @include adaptive-property(min-height, 200, 292, 525);
   @include adaptive-property(padding-inline, 22, 40, 40);
   @include adaptive-property(padding-block, 24, 44, 44);
 }
