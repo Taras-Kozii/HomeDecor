@@ -16,7 +16,7 @@
     @include on-tablet {
       row-gap: 20px;
     }
-    @media (min-width: 900px) {
+    @media (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
       column-gap: 1rem;
@@ -25,20 +25,32 @@
 }
 
 .product {
-  position: relative;
+  flex-basis: 100%;
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 1rem) / 2);
+  }
+  @media (min-width: 1024px) {
+    flex-basis: calc((100% - 2rem) / 3);
+  }
+  display: flex;
+  &__body-text {
+    position: relative;
+    z-index: 2;
+    max-width: 222px;
+    min-width: 40%;
+    // @include adaptive-property(width, 158, 222, 222);
+  }
   &__title {
     @include adaptive-property(margin-bottom, 0.875, 1.875, 1, rem);
   }
   &__img {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    overflow: hidden;
-     img {
-      object-fit: cover;
-      object-position: right;
-     }
-
+    width: 59%;
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    @include adaptive-property(margin-right, -24, -40, 0);
+    @include adaptive-property(margin-bottom, -24, -44, 0);
+    @include ibg(cover);
   }
   @include adaptive-property(padding-inline, 22, 40, 40);
   @include adaptive-property(padding-block, 24, 44, 44);

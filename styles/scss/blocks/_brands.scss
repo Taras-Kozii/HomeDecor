@@ -4,4 +4,30 @@
   &__content {
     @include adaptive-property(padding-block, 40, 60, 80);
   }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @include on-desktop {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: calc((100% - 60px) / 4);
+    @media (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 5);
+    }
+    @media (min-width: 1024px) {
+      flex-basis: calc((100% - 60px) / 6);
+    }
+    @include on-desktop {
+      flex-basis: auto;
+    }
+  }
+  &__link {
+    @include ibg(contain);
+  }
 }
