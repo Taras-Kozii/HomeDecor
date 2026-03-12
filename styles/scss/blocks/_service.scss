@@ -32,6 +32,8 @@
   &__img {
     width: 100%;
     aspect-ratio: 320 / 211;
+    position: relative;
+    z-index: 1;
     @include ibg;
     @include adaptive-property(margin-bottom, 12, 26, 46);
     @include on-tablet {
@@ -53,12 +55,35 @@
     }
   }
   &__bottom {
-   @media (min-width: 900px) {
+    @media (min-width: 900px) {
       display: flex;
       justify-content: space-between;
-   }
+    }
   }
   &__button {
-    align-self:flex-start;
+    align-self: flex-start;
+  }
+  &__plus {
+    position: absolute;
+    z-index: 2;
+    .tooltip {
+      background-color: $bg-color-dark;
+    }
+  }
+  &__plus--chair {
+    right: 12.5%; /* 68/550 */
+    bottom: 42.808219%; /* 125/292 */
+    @include on-desktop {
+      right: 15%; /* 188/1256 */
+      bottom: 43.427621%; /* 261/601 */
+    }
+  }
+  &__plus--cabinet {
+    left: 44.909091%; /* 247/550 */
+    bottom: 33.219178%; /* 97/292 */
+    @include on-desktop {
+      left: 26.512739%; /* 333/1256 */
+      bottom: 31.613977%; /* 190/601 */
+    }
   }
 }

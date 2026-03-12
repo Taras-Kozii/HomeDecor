@@ -58,6 +58,7 @@
     @include adaptive-property(margin-bottom, 40, 60, 46);
   }
   &__img {
+    position: relative;
     width: 100%;
     aspect-ratio: 320 / 256;
     @include ibg;
@@ -67,6 +68,27 @@
     @media (min-width: 720px) {
       width: 50%;
       aspect-ratio: 628 / 589;
+    }
+  }
+  &__plus {
+    position: absolute;
+    z-index: 3;
+  }
+  &__plus--picture {
+    top: 23.046875%; /* 59/256 */
+    right: 20.9375%; /* 67/320 */
+
+    @include on-tablet {
+      top: 17.635271%; /* 88/499 */
+      right: 42%; /* 231/550 */
+    }
+  }
+  &__plus--chair {
+    bottom: 37.109375%; /* 95/256 */
+    right: 26.5625%; /* 85/320 */
+    @include on-tablet {
+      bottom: 39.87976%; /* 199/499 */
+      right: 25.090909%; /* 138/550 */
     }
   }
 }
