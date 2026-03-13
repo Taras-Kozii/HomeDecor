@@ -1579,8 +1579,12 @@ h6 {
   }
 }
 .product__button {
-  margin-inline: auto;
   white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .product__button {
+    margin-inline: auto;
+  }
 }
 @media (min-width: 768px) {
   .product {
@@ -1642,15 +1646,15 @@ h6 {
 }
 
 .product:nth-child(1) {
-  background-color: #E1E4C2;
+  background-color: #e1e4c2;
 }
 
 .product:nth-child(2) {
-  background-color: #DCEEEE;
+  background-color: #dceeee;
 }
 
 .product:nth-child(3) {
-  background-color: #F3EFE1;
+  background-color: #f3efe1;
 }
 
 .shop__title {
@@ -1739,6 +1743,24 @@ h6 {
   }
 }
 
+.card-shop {
+  padding: 6px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+@media (hover: hover) and (pointer: fine) {
+  .card-shop:hover, .card-shop:focus-within {
+    border-color: #000;
+    border-radius: 6px;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .card-shop:active, .card-shop:focus, .card-shop:focus-within {
+    border-color: #000;
+    border-radius: 6px;
+  }
+}
 .card-shop__img {
   width: 100%;
   aspect-ratio: 138/128;
@@ -1935,6 +1957,22 @@ h6 {
   .brands__item {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+}
+.brands__link {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+@media (hover: hover) and (pointer: fine) {
+  .brands__link:hover, .brands__link:focus-within {
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .brands__link:active, .brands__link:focus, .brands__link:focus-within {
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
   }
 }
 .brands__link {

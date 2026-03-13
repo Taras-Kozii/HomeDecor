@@ -31,6 +31,13 @@
 }
 
 .card-shop {
+  padding: 6px;
+  transition: $transition-duraction ease-in-out;
+  border: 1px solid transparent;
+  @include hover {
+    border-color: $text-color-main;
+    border-radius: 6px;
+  }
   &__img {
     width: 100%;
     aspect-ratio: 138 / 128;

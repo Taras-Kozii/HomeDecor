@@ -52,8 +52,10 @@
     }
   }
   &__button {
-    margin-inline: auto;
     white-space: nowrap;
+    @media (min-width: 768px) {
+      margin-inline: auto;
+    }
   }
   @media (min-width: 768px) {
     flex-basis: calc((100% - 1rem) / 2);
@@ -68,13 +70,11 @@
   @include adaptive-property(padding-block, 24, 44, 44);
 }
 .product:nth-child(1) {
-  background-color: #E1E4C2;
+  background-color: #e1e4c2;
 }
 .product:nth-child(2) {
-  background-color: #DCEEEE;
+  background-color: #dceeee;
 }
-
 .product:nth-child(3) {
-  background-color: #F3EFE1;
+  background-color: #f3efe1;
 }
-

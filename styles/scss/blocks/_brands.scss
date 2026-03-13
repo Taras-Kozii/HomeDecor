@@ -28,6 +28,10 @@
     }
   }
   &__link {
+    transition: $transition-duraction ease-in-out;
+    @include hover {
+      filter: brightness(0%);
+    }
     @include ibg(contain);
   }
 }
