@@ -1,7 +1,7 @@
 @use "../utils/_index" as *;
 
 .menu {
-  @media (max-width: 1024.9px) {
+  @media (max-width: 1023px) {
     &__body {
       position: fixed;
       top: 0;
@@ -9,7 +9,12 @@
       height: 100svh;
       width: 100%;
       padding: 100px 30px 30px;
-      background: linear-gradient(0deg, #f0eeee 0%, #f5f5f5 40%, #5f5f6b 100%);
+      background: linear-gradient(
+        132deg,
+        #e1e4c2 0%,
+        #ff7114 50%,
+        #f3efe1 100%
+      );
       transition: $transition-duraction;
       overflow: auto;
 
@@ -20,7 +25,6 @@
         height: 80px;
         left: -100%;
         top: 0;
-        background: rgba(95, 95, 107, 0.1);
         backdrop-filter: blur(5px);
         transition: $transition-duraction;
         z-index: 2;
@@ -35,28 +39,33 @@
     }
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: 1024px) {
     &__list {
-      padding-block: 22px;
+      padding-block: 10px;
       display: flex;
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
-      column-gap: 80px;
+      column-gap: 32px;
       row-gap: 1.5rem;
     }
   }
 
   &__link {
-    @include adaptive-property(font-size, 1.5, 1.125, 1.125, rem);
     position: relative;
     top: 0;
     right: 0;
     display: inline-block;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: -0.004em;
-    color: #eee8de;
+    font-weight: 400;
+    line-height: 123.529412%; /* 21px/17 */
+    letter-spacing: 0px;
+    text-align: center;
+    color: $bg-color-main;
+    transition-duration: $transition-duraction;
+    @include adaptive-property(font-size, 1.5, 1.25, 1.0625, rem);
+    @include hover {
+      font-weight: 700;
+    }
   }
 }
 

@@ -15,8 +15,13 @@
     @include flex(space-between, center);
     @include adaptive-property(min-height, 52, 80, 80);
   }
+  &__menu {
+    display: flex;
+    column-gap: 55px;
+  }
 
-  &__logo {
+  &__logo,
+  &__shopping-cart {
     z-index: 5;
     @include position-r;
   }
@@ -71,13 +76,11 @@
 
 .burger.active {
   &::before {
-    //top: calc(50% - 1px);
     top: 50%;
     transform: rotate(-45deg) translateY(-50%);
   }
 
   &::after {
-    //top: calc(50% - 1px);
     top: 50%;
     transform: rotate(45deg) translateY(-50%);
   }
@@ -91,6 +94,9 @@
 .header.scrolling {
   background: rgba(79, 79, 84, 0.2);
   backdrop-filter: blur(18px);
+  .menu__link {
+    text-shadow: 0px 0px 5px #000;
+  }
 }
 
 .header.hidden {
