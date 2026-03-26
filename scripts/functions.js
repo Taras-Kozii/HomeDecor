@@ -26,6 +26,3 @@ export function lockPage() {
     }
   }
 }
-// export function setCSSProperty(item, property, value) {
-//   item.style.setProperty(property, value);
-// }

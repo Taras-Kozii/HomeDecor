@@ -86,7 +86,7 @@
   transition: $transition-duraction ease-in-out;
   img {
     @include adaptive-property(width, 104, 156, 192);
-    @include adaptive-property(height, 12, 18, 23);
+    @include adaptive-property(min-height, 16, 18, 23);
     object-position: center;
   }
   @include hover {
@@ -94,7 +94,7 @@
   }
   &--big {
     @include adaptive-property(width, 93, 142, 217);
-    @include adaptive-property(height, 11, 16, 25);
+    @include adaptive-property(min-height, 16, 16, 25);
   }
 }
 .shopping-cart {

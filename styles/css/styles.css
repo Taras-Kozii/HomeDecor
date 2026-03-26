@@ -420,16 +420,16 @@ h6 {
   }
 }
 .logo img {
-  height: calc(12px + (6) * (100vw - 320px) / (280));
+  min-height: calc(16px + (2) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
   .logo img {
-    height: calc(18px + (5) * (100vw - 600px) / (766));
+    min-height: calc(18px + (5) * (100vw - 600px) / (766));
   }
 }
 @media (min-width: 1366px) {
   .logo img {
-    height: 23px;
+    min-height: 23px;
   }
 }
 .logo img {
@@ -460,16 +460,16 @@ h6 {
   }
 }
 .logo--big {
-  height: calc(11px + (5) * (100vw - 320px) / (280));
+  min-height: calc(16px + (0) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
   .logo--big {
-    height: calc(16px + (9) * (100vw - 600px) / (766));
+    min-height: calc(16px + (9) * (100vw - 600px) / (766));
   }
 }
 @media (min-width: 1366px) {
   .logo--big {
-    height: 25px;
+    min-height: 25px;
   }
 }
 
@@ -1748,6 +1748,7 @@ h6 {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 @media (hover: hover) and (pointer: fine) {
   .card-shop:hover, .card-shop:focus-within {
@@ -2200,15 +2201,15 @@ h6 {
   }
 }
 .footer__logo {
-  height: calc(11px + (5) * (100vw - 320px) / (280));
+  min-height: calc(16px + (0) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
   .footer__logo {
-    height: calc(16px + (9) * (100vw - 600px) / (766));
+    min-height: calc(16px + (9) * (100vw - 600px) / (766));
   }
 }
 @media (min-width: 1366px) {
   .footer__logo {
-    height: 25px;
+    min-height: 25px;
   }
 }
