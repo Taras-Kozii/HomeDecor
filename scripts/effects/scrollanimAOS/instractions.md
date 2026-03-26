@@ -50,7 +50,6 @@ http://michalsnik.github.io/aos/
 ### 👻 Animations
 
 - Fade animations:
-
   - fade
   - fade-up
   - fade-down
@@ -62,14 +61,12 @@ http://michalsnik.github.io/aos/
   - fade-down-left
 
 - Flip animations:
-
   - flip-up
   - flip-down
   - flip-left
   - flip-right
 
 - Slide animations:
-
   - slide-up
   - slide-down
   - slide-left

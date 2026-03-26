@@ -23,7 +23,7 @@
     color: $text-color-main;
   }
 
-  @include hover-pseudo('::before') {
+  @include hover-pseudo("::before") {
     bottom: -50%;
   }
 }

@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOUSEDECOR</title>
-    <!-- <link rel="shortcut icon" href="" type="image/x-icon" /> -->
-    <!-- ПЕРЕДЗАВАНТАЖЕННЯ КАРТИНОК -->
-    <!-- <link rel="preload" as="image" href="" media="(max-width: 766px)" />
-    <link rel="preload" as="image" href="" media="(min-width: 767px)" /> -->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/img/hero-mobile.webp"
+      media="(max-width: 766px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/img/hero-desktop.webp"
+      media="(min-width: 767px)"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap"
       rel="stylesheet"
@@ -128,7 +137,18 @@
                   has a contemporary look.
                 </p>
               </div>
-              <a href="#" class="button fill-down-effect hero__button">
+              <a
+                href="#"
+                class="button fill-down-effect hero__button"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="500"
+                data-aos-duration="300"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+              >
                 <span>explore</span>
               </a>
             </div>
@@ -144,7 +164,6 @@
                 decoding="async"
                 width="320"
                 height="256"
-                loading="lazy"
               />
               <button
                 class="plus hero__plus hero__plus--chair"
@@ -259,7 +278,16 @@
               <artictle class="product">
                 <div class="product__body-text">
                   <h4 class="product__title section-title">Decor & Wellness</h4>
-                  <button class="button product__button fill-down-effect">
+                  <button
+                    class="button product__button fill-down-effect"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="50"
+                    data-aos-duration="300"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
+                    data-aos-anchor-placement="top-center"
+                  >
                     show more
                   </button>
                 </div>

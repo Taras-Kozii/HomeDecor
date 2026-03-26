@@ -64,7 +64,7 @@
   &__cart {
     aspect-ratio: 1 /1;
     @include ibg(contain);
-    @include adaptive-property(width, 24, 36, 40);
+    @include adaptive-property(min-width, 24, 36, 40);
   }
   &__bottom {
     display: flex;

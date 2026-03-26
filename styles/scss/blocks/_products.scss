@@ -69,12 +69,12 @@
   @include adaptive-property(padding-inline, 22, 40, 40);
   @include adaptive-property(padding-block, 24, 44, 44);
 }
-.product:nth-child(1) {
+.product:nth-child(3n) {
   background-color: #e1e4c2;
 }
-.product:nth-child(2) {
+.product:nth-child(3n + 1) {
   background-color: #dceeee;
 }
-.product:nth-child(3) {
+.product:nth-child(3n + 2) {
   background-color: #f3efe1;
 }

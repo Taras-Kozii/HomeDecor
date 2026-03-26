@@ -1645,15 +1645,15 @@ h6 {
   }
 }
 
-.product:nth-child(1) {
+.product:nth-child(3n) {
   background-color: #e1e4c2;
 }
 
-.product:nth-child(2) {
+.product:nth-child(3n+1) {
   background-color: #dceeee;
 }
 
-.product:nth-child(3) {
+.product:nth-child(3n+2) {
   background-color: #f3efe1;
 }
 
@@ -1877,16 +1877,16 @@ h6 {
      object-position: center;
 }
 .card-shop__cart {
-  width: calc(24px + (12) * (100vw - 320px) / (280));
+  min-width: calc(24px + (12) * (100vw - 320px) / (280));
 }
 @media (min-width: 599.98px) {
   .card-shop__cart {
-    width: calc(36px + (4) * (100vw - 600px) / (766));
+    min-width: calc(36px + (4) * (100vw - 600px) / (766));
   }
 }
 @media (min-width: 1366px) {
   .card-shop__cart {
-    width: 40px;
+    min-width: 40px;
   }
 }
 .card-shop__bottom {
@@ -1988,7 +1988,7 @@ h6 {
 }
 
 .contacts {
-  background-color: #A1A483;
+  background-color: #a1a483;
 }
 .contacts__content {
   margin-inline: auto;
@@ -2130,7 +2130,7 @@ h6 {
 }
 
 .footer {
-  background-color: #A1A483;
+  background-color: #a1a483;
 }
 .footer__content {
   margin-inline: auto;

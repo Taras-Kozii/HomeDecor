@@ -1,7 +1,7 @@
 @use "../utils/_index" as *;
 
 .footer {
-  background-color: #A1A483;
+  background-color: #a1a483;
   &__content {
     margin-inline: auto;
     max-width: 1016px;
@@ -27,4 +27,3 @@
     @include adaptive-property(height, 11, 16, 25);
   }
 }
-
